@@ -1,4 +1,5 @@
 import React from 'react';
+import Products from './products';
 
 function Home()
 {
@@ -13,6 +14,7 @@ function Home()
                     </div>
                 </div>
             </div>
+            <Products/>
         </div>
     )
 }
