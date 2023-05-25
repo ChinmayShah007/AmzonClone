@@ -2,11 +2,15 @@ import React,{useState, useEffect} from "react";
 import Skeleton from "react-loading-skeleton";
 import { NavLink } from "react-router-dom";
 
+
 function Products(){
 
     const[data,setData]= useState([]);
     const[filter,setFilter] = useState(data);
     const[loading,setLoading] = useState(false);
+
+    const dispatch = useDispatch();
+   
     let componentMounted = true;
     useEffect(()=>{
         const getProducts = async()=>{
